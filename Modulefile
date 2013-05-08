@@ -1,0 +1,8 @@
+name    'coralnexus-locales'
+version '0.0.1'
+source 'git://github.com/coralnexus/puppet-locales.git'
+author 'Adrian Webb <adrian.webb@coralnexus.com>'
+license 'Apache License, Version 2.0'
+summary 'Manage system locales'
+description 'Manage system locales'
+project_page 'https://github.com/coralnexus/puppet-locales'
