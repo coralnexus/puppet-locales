@@ -1,5 +1,5 @@
 
-class locales::params {
+class locales::params inherits locales::default {
 
   $base_name = 'locales'
 
