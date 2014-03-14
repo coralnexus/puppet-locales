@@ -27,7 +27,7 @@ class locales inherits locales::params {
   #-----------------------------------------------------------------------------
   # Installation
 
-  coral::package { $base_name:
+  corl::package { $base_name:
     resources => {
       build_packages  => {
         name => $locales::params::build_package_names
@@ -51,7 +51,7 @@ class locales inherits locales::params {
 
   $locales = $locales::params::locales
 
-  coral::file { $base_name:
+  corl::file { $base_name:
     resources => {
       config => {
         path    => $locales::params::config_file,
@@ -64,13 +64,13 @@ class locales inherits locales::params {
   #-----------------------------------------------------------------------------
   # Actions
 
-  coral::exec { $base_name:
+  corl::exec { $base_name:
     resources => {
       generate => {
         command     => $locale_gen_command,
         refreshonly => true
       }
     },
-    require => Coral::Package[$base_name]
+    require => Corl::Package[$base_name]
   }
 }

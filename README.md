@@ -1,7 +1,7 @@
-# coralnexus-locales
+### coralnexus-locales
 
 Manage system locales
 
-## Usage
+### Usage
 
 By default, en locales will be generated.

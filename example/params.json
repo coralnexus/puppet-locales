@@ -1,4 +1,4 @@
 {
-  "locales_ensure" : "present",
-  "locales" : [ "en_US.UTF-8 UTF-8" ]
+  "locales::package_ensure" : "present",
+  "locales::locales" : [ "en_US.UTF-8 UTF-8" ]
 }
